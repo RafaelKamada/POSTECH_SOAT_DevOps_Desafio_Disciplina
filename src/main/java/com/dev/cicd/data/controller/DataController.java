@@ -11,6 +11,11 @@ import java.util.Locale;
 @RestController
 public class DataController {
 
+        @GetMapping("/teste")
+        public String healthCheck() {
+                return "teste 2";
+        }
+        
         @GetMapping("/")
         public String healthCheck() {
                 return "HEALTH CHECK OK! 2";
@@ -18,7 +23,7 @@ public class DataController {
 
         @GetMapping("/version")
         public String version() {
-                return "The actual version is q.0.0";
+                return "The actual version is 1.0.0";
         }
 
         @GetMapping("/nations")
