@@ -10,15 +10,10 @@ import java.util.Locale;
 
 @RestController
 public class DataController {
-
-        @GetMapping("/teste")
-        public String healthCheck() {
-                return "teste 2";
-        }
-        
+ 
         @GetMapping("/")
         public String healthCheck() {
-                return "HEALTH CHECK OK! 2";
+                return "HEALTH CHECK OK!";
         }
 
         @GetMapping("/version")
