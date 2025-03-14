@@ -13,12 +13,12 @@ public class DataController {
 
         @GetMapping("/")
         public String healthCheck() {
-                return "HEALTH CHECK OK!";
+                return "HEALTH CHECK OK! 2";
         }
 
         @GetMapping("/version")
         public String version() {
-                return "The actual version is 2.0.0";
+                return "The actual version is q.0.0";
         }
 
         @GetMapping("/nations")
